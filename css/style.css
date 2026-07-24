@@ -36,4 +36,28 @@
     border: 3px solid #ffc107;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none !important;
+  width: 45px;
+  height: 45px;
+  z-index: 999;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#backToTop.show {
+  display: flex !important;
+}
+
+#backToTop:hover {
+  transform: translateY(-3px);
+}
 
